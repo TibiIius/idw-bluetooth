@@ -1,5 +1,5 @@
-import bluetooth
+import sys
+import pydbus
 
-devices = bluetooth.discover_devices()
-
-print(devices)
+if __name__ == "__main__":
+    bus = pydbus.SystemBus()
