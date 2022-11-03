@@ -3,6 +3,8 @@ with pkgs;
 mkShell {
   buildInputs = [
     python3Full
+    pylint
+    black
   ];
 
   shellHook = ''
